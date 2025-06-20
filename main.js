@@ -32,12 +32,14 @@ document.getElementById('success').style.display = "none";
 document.getElementById('mainPage').style.display = "block";
 document.getElementById('newsTwo').style.display = "block";
 
+if (window.innerWidth > 670 ) {
+  document.getElementById('newsTwo').style.display = "none";
+}
+
 form.reset();
 
 document.getElementById('emailError').style.display = "none";
 eAddress.classList.remove("custom-email");
-
-
 
 }
 
