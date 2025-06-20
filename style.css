@@ -198,9 +198,18 @@ button {
   font-size: 1rem;
 }
 
-.sButton, .mButton:hover {
+.sButton {
+  background-color: var(--Blue-800);
+}
+
+.mButton:hover {
   background-color: red;
 }
+
+.sButton:hover {
+  background-color: red;
+}
+
 
 .newsletter__img2 {
   display: none;
@@ -273,7 +282,9 @@ button {
 
 .success img {
   width: 64px;
+  padding: 0em 0em;
 }
+
 
 .success button {
   margin-top: 2em;
@@ -283,4 +294,9 @@ h1 {
   font-size: 3.5rem;
 }
 
+
+.success h1 {
+  padding: .5em 0em;
+  margin-top: -1.5em;
+}
 }
