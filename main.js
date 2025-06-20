@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const eAddress = document.getElementById('email');
 const userInput = document.getElementById('userInput');
 const dButton = document.getElementById('dButton');
+const newsTwo = document.getElementById('newsTwo');
 
 const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
 
@@ -28,12 +29,14 @@ console.log(data);
 };
 
 const closingSubmit = (e) => {
-document.getElementById('success').style.display = "none";
-document.getElementById('mainPage').style.display = "block";
-document.getElementById('newsTwo').style.display = "block";
+  document.getElementById('success').style.display = "none";
+  document.getElementById('mainPage').style.display = "block";
+  document.getElementById('newsTwo').style.display = "block";
 
 if (window.innerWidth < 670 ) {
   document.getElementById('newsTwo').style.display = "none";
+} else {
+  document.get
 }
 
 form.reset();
@@ -41,9 +44,20 @@ form.reset();
 document.getElementById('emailError').style.display = "none";
 eAddress.classList.remove("custom-email");
 
-}
+};
 
+const handleResize = () => {
+  if (window.innerWidth < 670) {
+    newsTwo.style.display = "none";
+  } else {
+    newsTwo.style.display = "block"
+  }
+};
 
 
 form.addEventListener('submit', handleSubmit);
 dButton.addEventListener('click', closingSubmit);
+window.addEventListener('resize', handleResize);
+
+//checks the page when it initially is opened
+handleResize();
