@@ -1,0 +1,286 @@
+/*styling settings */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "manrope", serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--Grey-200)
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+
+
+/* font */
+* {
+  font-family: "roboto", sans-serif;
+}
+
+:root {
+/*Color variables */
+--Blue-800: hsl(234, 29%, 20%);
+--Blue-700: hsl(235, 18%, 26%);
+--Grey: hsl(0, 0%,58%);
+--White: hsl(0, 0%, 100%);
+
+
+/*Font Variables */
+--fw-regular: 400;
+--fw-bold: 700;
+
+}
+
+/*make bullet icons inline with text */
+
+
+
+
+.tBullet, .tBullet2, .tBullet3 {
+  display: flex;
+  color: var(--Blue-800);
+  padding-bottom: 1em;
+
+}
+
+.bullImg {
+  padding-right: 1em;
+}
+
+.content {
+  padding:  2.6em 2em;
+}
+
+/*font color and sizing*/
+
+h1 {
+  color: var(--Blue-800);
+  font-size: 2.5rem;
+  line-height: 100%;
+
+}
+
+.content .join, li {
+  color: var(--Blue-800);
+  line-height: 150%;
+  font-size: 1rem;
+
+}
+
+.join {
+  padding: 1.5em 0em;
+}
+
+.email {
+  font-size: .75rem;
+  line-height: 150%;
+  color: var(--Blue-800);
+  font-weight: var(--fw-bold);
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+
+
+.custom-email {
+  padding: 1em;
+  width: 100%;
+  max-inline-size: 550px;
+  border-radius: 10px;
+  border: .5px solid red;
+  color: red;
+  background-color: #ffe7e6;
+}
+  
+
+
+
+.emailError {
+  display: none;
+  font-size: .75rem;
+  line-height: 150%;
+  color: red;
+  font-weight: var(--fw-bold);
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+  padding-left: 11.75em;
+}
+  
+
+.emailContainer {
+  display: flex;
+}
+
+input {
+  padding: 1em;
+  width: 100%;
+  max-inline-size: 550px;
+  border-radius: 10px;
+  border: .5px solid rgb(205, 198, 198);
+}
+
+/*
+.inputError {
+  display: none;
+  padding: 1em;
+  width: 100%;
+  max-inline-size: 550px;
+  border-radius: 10px;
+  border: .5px solid red;
+  color: red;
+  background-color: #ffe7e6;
+  
+}
+
+*/
+
+
+button {
+  padding: 1em;
+  width: 100%;
+  max-inline-size: 550px;
+  border-radius: 10px;
+  background-color: var(--Blue-800);
+  color: white;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: var(--fw-bold);
+  border: none;
+  cursor: pointer;
+
+}
+
+.buttonContain {
+  padding-top: 1.5em;
+}
+
+.mainPage {
+  display: block;
+  background-color: white;
+}
+
+.success {
+  display: none;
+  padding: 8.5em 1.5em;
+}
+
+.success h1 {
+  padding: 1em 0em;
+}
+
+
+.success button {
+  margin-top: 18em;
+}
+  
+.success p {
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+.sButton, .mButton:hover {
+  background-color: red;
+}
+
+.newsletter__img2 {
+  display: none;
+}
+
+@media (min-width: 670px) {
+  .newsletter__img {
+    display: none;
+  }
+
+  /* turn the blow display to flex when done*/
+  .newsletter__img2 {
+    display: flex;
+    padding: 2em 0em;
+  }
+
+ /* turn the blow display to flex when done*/
+  main {
+    display: flex;
+    place-content: center;
+    overflow: visible;
+    border-radius: 20px;
+    padding: 0em 1em;
+
+  }
+
+  .content {
+  width: 90%;
+  padding-top: 7em;
+}
+
+.emailError {
+  display: none;
+  font-size: .75rem;
+  line-height: 150%;
+  color: red;
+  font-weight: var(--fw-bold);
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+  padding-left: 14.5em;
+}
+
+
+.success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-inline-size: 400px;
+  height: 520px;
+}
+
+
+
+.thanks{
+  padding: 2em 0em;
+  color: var(--Blue-800);
+  font-size: 3.5rem;
+  line-height: 100%;
+  }
+
+
+.success p {
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+.success img {
+  width: 64px;
+}
+
+.success button {
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+}

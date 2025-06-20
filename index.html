@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter</title>
+</head>
+<body>
+  <main>
+    <div id ="mainPage" class = "mainPage">
+      <div class="newsletter">
+        <img class="newsletter__img" src="/assets/images/illustration-sign-up-mobile.svg" alt="computer images" >
+      </div>
+      <section class="content">
+        <h1>Stay updated!</h1>
+        <p class="join">Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="tBullet">
+          <img class = "bullImg" src="/assets/images/icon-list.svg">
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="tBullet2">
+          <img class = "bullImg" src="/assets/images/icon-list.svg">
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="tBullet3">
+          <img class = "bullImg" src="/assets/images/icon-list.svg">
+          <p>And much more!</p>
+        </div>
+        <!--
+        <ul class="content__list">
+          <li><img class="bullet" src="/assets/images/icon-list.svg"> Product discovery and building what matters</li>
+          <li><img class="bullet" src="/assets/images/icon-list.svg"> Measuring to ensure updates are a success</li>
+          <li><img class="bullet" src="/assets/images/icon-list.svg"> And much more!</li>
+        </ul>
+      -->
+        <div class="emailContainer">
+          <p class= "email">Email address</p>
+          <p class= "emailError" id = "emailError"> Valid email required</p>
+        </div>
+        <form id = "form">
+          <input id = "email" name = "email" type = "text" placeholder="email@company.com">
+
+          <!--<input id = "inputError" name = "emailTwo" type = "text" class = "inputError" placeholder="ash#loremcompany.com"> -->
+          <div class="buttonContain">
+            <button id="submit" type = "submit" class="mButton">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <img id="newsTwo" class="newsletter__img2" src="/assets/images/illustration-sign-up-desktop.svg" alt="computer images" />
+    <div id = "success" class = "success">
+      <img class="successImg" src="/assets/images/icon-success.svg" />
+      <h1 class="thanks">Thanks for subscribing!</h1>
+      <p class="confirmation">A confirmation email has been sent to <b><span id = "userInput">ash@lorecompany.com</span></b>. Please open it and click the button inside to confirm your subscription.</p>
+      <button id = "dButton" class="sButton" type = "button">Dismiss Message</button>
+    </div>
+    
+  </main>
+<script src="main.js"></script>
+</body>
+</html>
