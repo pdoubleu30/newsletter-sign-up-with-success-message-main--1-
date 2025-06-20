@@ -49,8 +49,6 @@ eAddress.classList.remove("custom-email");
 const handleResize = () => {
   if (window.innerWidth < 670) {
     newsTwo.style.display = "none";
-  } else {
-    newsTwo.style.display = "block"
   }
 };
 
