@@ -74,6 +74,10 @@ img, picture, video, canvas, svg {
 
 /*font color and sizing*/
 
+body {
+  background-color: #1e1e1e
+}
+
 h1 {
   color: var(--Blue-800);
   font-size: 2.5rem;
@@ -174,6 +178,8 @@ button {
   padding-top: 1.5em;
 }
 
+/*check this later
+*/
 .mainPage {
   display: block;
   background-color: white;
@@ -182,6 +188,7 @@ button {
 .success {
   display: none;
   padding: 8.5em 1.5em;
+  background-color: white;
 }
 
 .success h1 {
@@ -222,23 +229,45 @@ button {
 
   /* turn the blow display to flex when done*/
   .newsletter__img2 {
-    display: flex;
-    padding: 2em 0em;
+    display: block;
+    padding-left: 2em;
+  
   }
+
+  .mainPage {
+  display: flex;
+  background-color: white;
+  border-radius: 36px;
+  align-items: center;
+  padding: 2em 0em;
+  
+ 
+
+}
 
  /* turn the blow display to flex when done*/
   main {
     display: flex;
+    /*
     place-content: center;
+    */
     overflow: visible;
     border-radius: 20px;
     padding: 0em 1em;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  
 
   }
 
+  body {
+    padding: 2em 0em;
+  }
+
   .content {
-  width: 90%;
-  padding-top: 7em;
+  width: 50%;
+ 
 }
 
 .emailError {
@@ -249,20 +278,20 @@ button {
   font-weight: var(--fw-bold);
   padding-top: 1.5em;
   padding-bottom: .5em;
-  padding-left: 14.5em;
+  padding-left: 18em;
 }
 
 
 .success {
   display: none;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 36px;
   width: 100%;
-  max-inline-size: 400px;
-  height: 520px;
+  max-inline-size: 450px;
+  padding: 3em 3em;
+  padding-top: 8em;
 }
 
 
@@ -280,9 +309,12 @@ button {
   font-size: 1rem;
 }
 
-.success img {
+.successImg {
   width: 64px;
   padding: 0em 0em;
+  position: relative;
+  bottom: 80px;
+
 }
 
 
@@ -299,4 +331,9 @@ h1 {
   padding: .5em 0em;
   margin-top: -1.5em;
 }
+
+.join {
+  padding: 2em 0em;
+}
+
 }
