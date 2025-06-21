@@ -49,8 +49,12 @@ eAddress.classList.remove("custom-email");
 const handleResize = () => {
   if (window.innerWidth < 670) {
     newsTwo.style.display = "none";
+  } else if (window.innerWidth > 670) {
+    newsTwo.style.display = "flex";
   }
+
 };
+
 
 
 form.addEventListener('submit', handleSubmit);
