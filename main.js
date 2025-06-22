@@ -18,7 +18,7 @@ const handleSubmit = (e) => {
     document.getElementById('mainPage').style.display = "none";
     document.getElementById('newsTwo').style.display = "none";
     };
-    //below code taks input content and displays it on the email on the success page
+    //below code takes input content and displays it on the email on the success page
     userInput.textContent = email.value;
 
 const formData = new FormData(e.target);
@@ -29,15 +29,25 @@ console.log(data);
 };
 
 const closingSubmit = (e) => {
+
+  
   document.getElementById('success').style.display = "none";
-  document.getElementById('mainPage').style.display = "block";
-  document.getElementById('newsTwo').style.display = "block";
+  if (window.innerWidth > 670) {
+    document.getElementById('mainPage').style.display = "flex";
+    document.getElementById('newsTwo').style.display = "flex";
+  } else {
+    document.getElementById('mainPage').style.display = "block";
+  }
+
+  /*
+  
 
 if (window.innerWidth < 670 ) {
   document.getElementById('newsTwo').style.display = "none";
 } else {
   document.get
 }
+  */
 
 form.reset();
 
@@ -47,12 +57,18 @@ eAddress.classList.remove("custom-email");
 };
 
 const handleResize = () => {
-  if (window.innerWidth < 670) {
+  if (document.getElementById('success').style.display === "block") {
+    newsTwo.style.display = 'none';
+    document.getElementById('mainPage').style.display = "none";
+  } else if (window.innerWidth < 670) {
     newsTwo.style.display = "none";
-  } else if (window.innerWidth > 670) {
-    newsTwo.style.display = "flex";
-  }
+      document.getElementById('mainPage').style.display = "block";
 
+  } else if (window.innerWidth > 670) {
+    newsTwo.style.display = "block";
+    document.getElementById('mainPage').style.display = "flex";
+
+  }
 };
 
 
